@@ -8,12 +8,12 @@ import numpy as np
 import torch
 from torch.utils.tensorboard import SummaryWriter
 
-from tianshou.data import Collector, VectorReplayBuffer
-from tianshou.env import ContinuousToDiscrete, SubprocVectorEnv
-from tianshou.policy import BranchingDQNPolicy
-from tianshou.trainer import offpolicy_trainer
-from tianshou.utils import TensorboardLogger
-from tianshou.utils.net.common import BranchingNet
+from tianshou_pde.data import Collector, VectorReplayBuffer
+from tianshou_pde.env import ContinuousToDiscrete, SubprocVectorEnv
+from tianshou_pde.policy import BranchingDQNPolicy
+from tianshou_pde.trainer import offpolicy_trainer
+from tianshou_pde.utils import TensorboardLogger
+from tianshou_pde.utils.net.common import BranchingNet
 
 
 def get_args():

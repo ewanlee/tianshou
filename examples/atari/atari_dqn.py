@@ -9,12 +9,12 @@ from atari_network import DQN
 from atari_wrapper import make_atari_env
 from torch.utils.tensorboard import SummaryWriter
 
-from tianshou.data import Collector, VectorReplayBuffer
-from tianshou.policy import DQNPolicy
-from tianshou.policy.modelbased.icm import ICMPolicy
-from tianshou.trainer import offpolicy_trainer
-from tianshou.utils import TensorboardLogger, WandbLogger
-from tianshou.utils.net.discrete import IntrinsicCuriosityModule
+from tianshou_pde.data import Collector, VectorReplayBuffer
+from tianshou_pde.policy import DQNPolicy
+from tianshou_pde.policy.modelbased.icm import ICMPolicy
+from tianshou_pde.trainer import offpolicy_trainer
+from tianshou_pde.utils import TensorboardLogger, WandbLogger
+from tianshou_pde.utils.net.discrete import IntrinsicCuriosityModule
 
 
 def get_args():

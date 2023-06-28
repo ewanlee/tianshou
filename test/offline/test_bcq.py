@@ -9,13 +9,13 @@ import numpy as np
 import torch
 from torch.utils.tensorboard import SummaryWriter
 
-from tianshou.data import Collector, VectorReplayBuffer
-from tianshou.env import DummyVectorEnv
-from tianshou.policy import BCQPolicy
-from tianshou.trainer import offline_trainer
-from tianshou.utils import TensorboardLogger
-from tianshou.utils.net.common import MLP, Net
-from tianshou.utils.net.continuous import VAE, Critic, Perturbation
+from tianshou_pde.data import Collector, VectorReplayBuffer
+from tianshou_pde.env import DummyVectorEnv
+from tianshou_pde.policy import BCQPolicy
+from tianshou_pde.trainer import offline_trainer
+from tianshou_pde.utils import TensorboardLogger
+from tianshou_pde.utils.net.common import MLP, Net
+from tianshou_pde.utils.net.continuous import VAE, Critic, Perturbation
 
 if __name__ == "__main__":
     from gather_pendulum_data import expert_file_name, gather_data

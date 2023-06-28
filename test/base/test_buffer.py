@@ -8,7 +8,7 @@ import numpy as np
 import pytest
 import torch
 
-from tianshou.data import (
+from tianshou_pde.data import (
     Batch,
     CachedReplayBuffer,
     HERReplayBuffer,
@@ -19,7 +19,7 @@ from tianshou.data import (
     SegmentTree,
     VectorReplayBuffer,
 )
-from tianshou.data.utils.converter import to_hdf5
+from tianshou_pde.data.utils.converter import to_hdf5
 
 if __name__ == '__main__':
     from env import MyGoalEnv, MyTestEnv

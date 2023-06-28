@@ -8,7 +8,7 @@ import cv2
 import gymnasium as gym
 import numpy as np
 
-from tianshou.env import ShmemVectorEnv
+from tianshou_pde.env import ShmemVectorEnv
 
 try:
     import envpool

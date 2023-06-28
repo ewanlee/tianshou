@@ -8,13 +8,13 @@ import torch
 from torch.distributions import Independent, Normal
 from torch.utils.tensorboard import SummaryWriter
 
-from tianshou.data import Collector, VectorReplayBuffer
-from tianshou.env import DummyVectorEnv
-from tianshou.policy import PPOPolicy
-from tianshou.trainer import OnpolicyTrainer
-from tianshou.utils import TensorboardLogger
-from tianshou.utils.net.common import ActorCritic, Net
-from tianshou.utils.net.continuous import ActorProb, Critic
+from tianshou_pde.data import Collector, VectorReplayBuffer
+from tianshou_pde.env import DummyVectorEnv
+from tianshou_pde.policy import PPOPolicy
+from tianshou_pde.trainer import OnpolicyTrainer
+from tianshou_pde.utils import TensorboardLogger
+from tianshou_pde.utils.net.common import ActorCritic, Net
+from tianshou_pde.utils.net.continuous import ActorProb, Critic
 
 
 def get_args():

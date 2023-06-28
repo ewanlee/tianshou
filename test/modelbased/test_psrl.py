@@ -7,10 +7,10 @@ import pytest
 import torch
 from torch.utils.tensorboard import SummaryWriter
 
-from tianshou.data import Collector, VectorReplayBuffer
-from tianshou.policy import PSRLPolicy
-from tianshou.trainer import onpolicy_trainer
-from tianshou.utils import LazyLogger, TensorboardLogger, WandbLogger
+from tianshou_pde.data import Collector, VectorReplayBuffer
+from tianshou_pde.policy import PSRLPolicy
+from tianshou_pde.trainer import onpolicy_trainer
+from tianshou_pde.utils import LazyLogger, TensorboardLogger, WandbLogger
 
 try:
     import envpool

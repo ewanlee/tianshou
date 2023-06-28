@@ -12,20 +12,20 @@ import torch
 import wandb
 from torch.utils.tensorboard import SummaryWriter
 
-from tianshou.data import (
+from tianshou_pde.data import (
     Collector,
     HERReplayBuffer,
     HERVectorReplayBuffer,
     ReplayBuffer,
     VectorReplayBuffer,
 )
-from tianshou.env import ShmemVectorEnv, TruncatedAsTerminated
-from tianshou.exploration import GaussianNoise
-from tianshou.policy import DDPGPolicy
-from tianshou.trainer import offpolicy_trainer
-from tianshou.utils import TensorboardLogger, WandbLogger
-from tianshou.utils.net.common import Net, get_dict_state_decorator
-from tianshou.utils.net.continuous import Actor, Critic
+from tianshou_pde.env import ShmemVectorEnv, TruncatedAsTerminated
+from tianshou_pde.exploration import GaussianNoise
+from tianshou_pde.policy import DDPGPolicy
+from tianshou_pde.trainer import offpolicy_trainer
+from tianshou_pde.utils import TensorboardLogger, WandbLogger
+from tianshou_pde.utils.net.common import Net, get_dict_state_decorator
+from tianshou_pde.utils.net.continuous import Actor, Critic
 
 
 def get_args():

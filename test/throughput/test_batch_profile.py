@@ -5,7 +5,7 @@ import numpy as np
 import pytest
 import torch
 
-from tianshou.data import Batch
+from tianshou_pde.data import Batch
 
 
 @pytest.fixture(scope="module")

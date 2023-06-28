@@ -5,7 +5,7 @@ import gymnasium as gym
 import numpy as np
 import vizdoom as vzd
 
-from tianshou.env import ShmemVectorEnv
+from tianshou_pde.env import ShmemVectorEnv
 
 try:
     import envpool

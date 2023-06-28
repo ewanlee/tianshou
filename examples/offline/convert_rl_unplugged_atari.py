@@ -36,7 +36,7 @@ import requests
 import tensorflow as tf
 from tqdm import tqdm
 
-from tianshou.data import Batch
+from tianshou_pde.data import Batch
 
 tf.config.set_visible_devices([], 'GPU')
 

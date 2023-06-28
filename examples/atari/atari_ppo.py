@@ -10,12 +10,12 @@ from atari_wrapper import make_atari_env
 from torch.optim.lr_scheduler import LambdaLR
 from torch.utils.tensorboard import SummaryWriter
 
-from tianshou.data import Collector, VectorReplayBuffer
-from tianshou.policy import ICMPolicy, PPOPolicy
-from tianshou.trainer import onpolicy_trainer
-from tianshou.utils import TensorboardLogger, WandbLogger
-from tianshou.utils.net.common import ActorCritic
-from tianshou.utils.net.discrete import Actor, Critic, IntrinsicCuriosityModule
+from tianshou_pde.data import Collector, VectorReplayBuffer
+from tianshou_pde.policy import ICMPolicy, PPOPolicy
+from tianshou_pde.trainer import onpolicy_trainer
+from tianshou_pde.utils import TensorboardLogger, WandbLogger
+from tianshou_pde.utils.net.common import ActorCritic
+from tianshou_pde.utils.net.discrete import Actor, Critic, IntrinsicCuriosityModule
 
 
 def get_args():

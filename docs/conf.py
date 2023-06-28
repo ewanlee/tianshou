@@ -16,10 +16,10 @@
 
 import sphinx_rtd_theme
 
-import tianshou
+import tianshou_pde
 
 # Get the version string
-version = tianshou.__version__
+version = tianshou_pde.__version__
 
 # -- Project information -----------------------------------------------------
 

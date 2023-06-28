@@ -2,7 +2,7 @@ import warnings
 
 import gymnasium as gym
 
-from tianshou.env import ShmemVectorEnv, VectorEnvNormObs
+from tianshou_pde.env import ShmemVectorEnv, VectorEnvNormObs
 
 try:
     import envpool

@@ -9,10 +9,10 @@ from atari_network import C51
 from atari_wrapper import make_atari_env
 from torch.utils.tensorboard import SummaryWriter
 
-from tianshou.data import Collector, VectorReplayBuffer
-from tianshou.policy import C51Policy
-from tianshou.trainer import offpolicy_trainer
-from tianshou.utils import TensorboardLogger, WandbLogger
+from tianshou_pde.data import Collector, VectorReplayBuffer
+from tianshou_pde.policy import C51Policy
+from tianshou_pde.trainer import offpolicy_trainer
+from tianshou_pde.utils import TensorboardLogger, WandbLogger
 
 
 def get_args():

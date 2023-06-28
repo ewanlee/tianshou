@@ -9,11 +9,11 @@ from atari_network import DQN
 from atari_wrapper import make_atari_env
 from torch.utils.tensorboard import SummaryWriter
 
-from tianshou.data import Collector, VectorReplayBuffer
-from tianshou.policy import FQFPolicy
-from tianshou.trainer import offpolicy_trainer
-from tianshou.utils import TensorboardLogger, WandbLogger
-from tianshou.utils.net.discrete import FractionProposalNetwork, FullQuantileFunction
+from tianshou_pde.data import Collector, VectorReplayBuffer
+from tianshou_pde.policy import FQFPolicy
+from tianshou_pde.trainer import offpolicy_trainer
+from tianshou_pde.utils import TensorboardLogger, WandbLogger
+from tianshou_pde.utils.net.discrete import FractionProposalNetwork, FullQuantileFunction
 
 
 def get_args():

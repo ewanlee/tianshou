@@ -3,8 +3,8 @@ from timeit import timeit
 import numpy as np
 import torch
 
-from tianshou.data import Batch, ReplayBuffer, to_numpy
-from tianshou.policy import BasePolicy
+from tianshou_pde.data import Batch, ReplayBuffer, to_numpy
+from tianshou_pde.policy import BasePolicy
 
 
 def compute_episodic_return_base(batch, gamma):

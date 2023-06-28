@@ -3,7 +3,7 @@ import pytest
 import tqdm
 from torch.utils.tensorboard import SummaryWriter
 
-from tianshou.data import (
+from tianshou_pde.data import (
     AsyncCollector,
     Batch,
     CachedReplayBuffer,
@@ -12,8 +12,8 @@ from tianshou.data import (
     ReplayBuffer,
     VectorReplayBuffer,
 )
-from tianshou.env import DummyVectorEnv, SubprocVectorEnv
-from tianshou.policy import BasePolicy
+from tianshou_pde.env import DummyVectorEnv, SubprocVectorEnv
+from tianshou_pde.policy import BasePolicy
 
 try:
     import envpool

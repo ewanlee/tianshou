@@ -6,8 +6,8 @@ import numpy as np
 import pytest
 from gymnasium.spaces.discrete import Discrete
 
-from tianshou.data import Batch
-from tianshou.env import (
+from tianshou_pde.data import Batch
+from tianshou_pde.env import (
     ContinuousToDiscrete,
     DummyVectorEnv,
     MultiDiscreteToDiscrete,
@@ -16,8 +16,8 @@ from tianshou.env import (
     SubprocVectorEnv,
     VectorEnvNormObs,
 )
-from tianshou.env.gym_wrappers import TruncatedAsTerminated
-from tianshou.utils import RunningMeanStd
+from tianshou_pde.env.gym_wrappers import TruncatedAsTerminated
+from tianshou_pde.utils import RunningMeanStd
 
 if __name__ == "__main__":
     from env import MyTestEnv, NXEnv

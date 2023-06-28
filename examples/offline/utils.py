@@ -5,8 +5,8 @@ import gymnasium as gym
 import h5py
 import numpy as np
 
-from tianshou.data import ReplayBuffer
-from tianshou.utils import RunningMeanStd
+from tianshou_pde.data import ReplayBuffer
+from tianshou_pde.utils import RunningMeanStd
 
 
 def load_buffer_d4rl(expert_data_task: str) -> ReplayBuffer:

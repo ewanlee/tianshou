@@ -5,7 +5,7 @@ import gymnasium as gym
 import numpy as np
 import tqdm
 
-from tianshou.data import Batch, ReplayBuffer, VectorReplayBuffer
+from tianshou_pde.data import Batch, ReplayBuffer, VectorReplayBuffer
 
 
 def test_replaybuffer(task="Pendulum-v1"):

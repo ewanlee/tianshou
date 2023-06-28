@@ -13,10 +13,10 @@ from torch.utils.tensorboard import SummaryWriter
 from examples.atari.atari_network import QRDQN
 from examples.atari.atari_wrapper import make_atari_env
 from examples.offline.utils import load_buffer
-from tianshou.data import Collector, VectorReplayBuffer
-from tianshou.policy import DiscreteCQLPolicy
-from tianshou.trainer import offline_trainer
-from tianshou.utils import TensorboardLogger, WandbLogger
+from tianshou_pde.data import Collector, VectorReplayBuffer
+from tianshou_pde.policy import DiscreteCQLPolicy
+from tianshou_pde.trainer import offline_trainer
+from tianshou_pde.utils import TensorboardLogger, WandbLogger
 
 
 def get_args():

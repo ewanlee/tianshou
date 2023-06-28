@@ -9,10 +9,10 @@ from atari_network import Rainbow
 from atari_wrapper import make_atari_env
 from torch.utils.tensorboard import SummaryWriter
 
-from tianshou.data import Collector, PrioritizedVectorReplayBuffer, VectorReplayBuffer
-from tianshou.policy import RainbowPolicy
-from tianshou.trainer import offpolicy_trainer
-from tianshou.utils import TensorboardLogger, WandbLogger
+from tianshou_pde.data import Collector, PrioritizedVectorReplayBuffer, VectorReplayBuffer
+from tianshou_pde.policy import RainbowPolicy
+from tianshou_pde.trainer import offpolicy_trainer
+from tianshou_pde.utils import TensorboardLogger, WandbLogger
 
 
 def get_args():

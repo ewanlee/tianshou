@@ -10,18 +10,18 @@ import torch
 from pettingzoo.classic import tictactoe_v3
 from torch.utils.tensorboard import SummaryWriter
 
-from tianshou.data import Collector, VectorReplayBuffer
-from tianshou.env import DummyVectorEnv
-from tianshou.env.pettingzoo_env import PettingZooEnv
-from tianshou.policy import (
+from tianshou_pde.data import Collector, VectorReplayBuffer
+from tianshou_pde.env import DummyVectorEnv
+from tianshou_pde.env.pettingzoo_env import PettingZooEnv
+from tianshou_pde.policy import (
     BasePolicy,
     DQNPolicy,
     MultiAgentPolicyManager,
     RandomPolicy,
 )
-from tianshou.trainer import offpolicy_trainer
-from tianshou.utils import TensorboardLogger
-from tianshou.utils.net.common import Net
+from tianshou_pde.trainer import offpolicy_trainer
+from tianshou_pde.utils import TensorboardLogger
+from tianshou_pde.utils.net.common import Net
 
 
 def get_env(render_mode: Optional[str] = None):

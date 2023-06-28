@@ -9,13 +9,13 @@ import torch
 from torch.distributions import Independent, Normal
 from torch.utils.tensorboard import SummaryWriter
 
-from tianshou.data import Collector, VectorReplayBuffer
-from tianshou.env import DummyVectorEnv
-from tianshou.policy import GAILPolicy
-from tianshou.trainer import onpolicy_trainer
-from tianshou.utils import TensorboardLogger
-from tianshou.utils.net.common import ActorCritic, Net
-from tianshou.utils.net.continuous import ActorProb, Critic
+from tianshou_pde.data import Collector, VectorReplayBuffer
+from tianshou_pde.env import DummyVectorEnv
+from tianshou_pde.policy import GAILPolicy
+from tianshou_pde.trainer import onpolicy_trainer
+from tianshou_pde.utils import TensorboardLogger
+from tianshou_pde.utils.net.common import ActorCritic, Net
+from tianshou_pde.utils.net.continuous import ActorProb, Critic
 
 if __name__ == "__main__":
     from gather_pendulum_data import expert_file_name, gather_data

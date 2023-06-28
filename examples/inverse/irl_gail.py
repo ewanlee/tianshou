@@ -14,13 +14,13 @@ from torch.distributions import Independent, Normal
 from torch.optim.lr_scheduler import LambdaLR
 from torch.utils.tensorboard import SummaryWriter
 
-from tianshou.data import Batch, Collector, ReplayBuffer, VectorReplayBuffer
-from tianshou.env import SubprocVectorEnv
-from tianshou.policy import GAILPolicy
-from tianshou.trainer import onpolicy_trainer
-from tianshou.utils import TensorboardLogger
-from tianshou.utils.net.common import ActorCritic, Net
-from tianshou.utils.net.continuous import ActorProb, Critic
+from tianshou_pde.data import Batch, Collector, ReplayBuffer, VectorReplayBuffer
+from tianshou_pde.env import SubprocVectorEnv
+from tianshou_pde.policy import GAILPolicy
+from tianshou_pde.trainer import onpolicy_trainer
+from tianshou_pde.utils import TensorboardLogger
+from tianshou_pde.utils.net.common import ActorCritic, Net
+from tianshou_pde.utils.net.continuous import ActorProb, Critic
 
 
 class NoRewardEnv(gym.RewardWrapper):

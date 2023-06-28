@@ -7,13 +7,13 @@ import numpy as np
 import torch
 from torch.utils.tensorboard import SummaryWriter
 
-from tianshou.data import Collector, VectorReplayBuffer
-from tianshou.env import DummyVectorEnv
-from tianshou.policy import ICMPolicy, PPOPolicy
-from tianshou.trainer import onpolicy_trainer
-from tianshou.utils import TensorboardLogger
-from tianshou.utils.net.common import MLP, ActorCritic, Net
-from tianshou.utils.net.discrete import Actor, Critic, IntrinsicCuriosityModule
+from tianshou_pde.data import Collector, VectorReplayBuffer
+from tianshou_pde.env import DummyVectorEnv
+from tianshou_pde.policy import ICMPolicy, PPOPolicy
+from tianshou_pde.trainer import onpolicy_trainer
+from tianshou_pde.utils import TensorboardLogger
+from tianshou_pde.utils.net.common import MLP, ActorCritic, Net
+from tianshou_pde.utils.net.discrete import Actor, Critic, IntrinsicCuriosityModule
 
 
 def get_args():

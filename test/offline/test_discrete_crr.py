@@ -8,13 +8,13 @@ import numpy as np
 import torch
 from torch.utils.tensorboard import SummaryWriter
 
-from tianshou.data import Collector, VectorReplayBuffer
-from tianshou.env import DummyVectorEnv
-from tianshou.policy import DiscreteCRRPolicy
-from tianshou.trainer import offline_trainer
-from tianshou.utils import TensorboardLogger
-from tianshou.utils.net.common import ActorCritic, Net
-from tianshou.utils.net.discrete import Actor, Critic
+from tianshou_pde.data import Collector, VectorReplayBuffer
+from tianshou_pde.env import DummyVectorEnv
+from tianshou_pde.policy import DiscreteCRRPolicy
+from tianshou_pde.trainer import offline_trainer
+from tianshou_pde.utils import TensorboardLogger
+from tianshou_pde.utils.net.common import ActorCritic, Net
+from tianshou_pde.utils.net.discrete import Actor, Critic
 
 if __name__ == "__main__":
     from gather_cartpole_data import expert_file_name, gather_data

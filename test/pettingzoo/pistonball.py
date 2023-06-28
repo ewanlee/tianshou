@@ -9,13 +9,13 @@ import pettingzoo.butterfly.pistonball_v6 as pistonball_v6
 import torch
 from torch.utils.tensorboard import SummaryWriter
 
-from tianshou.data import Collector, VectorReplayBuffer
-from tianshou.env import DummyVectorEnv
-from tianshou.env.pettingzoo_env import PettingZooEnv
-from tianshou.policy import BasePolicy, DQNPolicy, MultiAgentPolicyManager
-from tianshou.trainer import offpolicy_trainer
-from tianshou.utils import TensorboardLogger
-from tianshou.utils.net.common import Net
+from tianshou_pde.data import Collector, VectorReplayBuffer
+from tianshou_pde.env import DummyVectorEnv
+from tianshou_pde.env.pettingzoo_env import PettingZooEnv
+from tianshou_pde.policy import BasePolicy, DQNPolicy, MultiAgentPolicyManager
+from tianshou_pde.trainer import offpolicy_trainer
+from tianshou_pde.utils import TensorboardLogger
+from tianshou_pde.utils.net.common import Net
 
 
 def get_parser() -> argparse.ArgumentParser:

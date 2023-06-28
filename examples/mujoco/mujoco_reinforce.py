@@ -13,12 +13,12 @@ from torch.distributions import Independent, Normal
 from torch.optim.lr_scheduler import LambdaLR
 from torch.utils.tensorboard import SummaryWriter
 
-from tianshou.data import Collector, ReplayBuffer, VectorReplayBuffer
-from tianshou.policy import PGPolicy
-from tianshou.trainer import onpolicy_trainer
-from tianshou.utils import TensorboardLogger, WandbLogger
-from tianshou.utils.net.common import Net
-from tianshou.utils.net.continuous import ActorProb
+from tianshou_pde.data import Collector, ReplayBuffer, VectorReplayBuffer
+from tianshou_pde.policy import PGPolicy
+from tianshou_pde.trainer import onpolicy_trainer
+from tianshou_pde.utils import TensorboardLogger, WandbLogger
+from tianshou_pde.utils.net.common import Net
+from tianshou_pde.utils.net.continuous import ActorProb
 
 
 def get_args():

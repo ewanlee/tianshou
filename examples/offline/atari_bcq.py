@@ -13,12 +13,12 @@ from torch.utils.tensorboard import SummaryWriter
 from examples.atari.atari_network import DQN
 from examples.atari.atari_wrapper import make_atari_env
 from examples.offline.utils import load_buffer
-from tianshou.data import Collector, VectorReplayBuffer
-from tianshou.policy import DiscreteBCQPolicy
-from tianshou.trainer import offline_trainer
-from tianshou.utils import TensorboardLogger, WandbLogger
-from tianshou.utils.net.common import ActorCritic
-from tianshou.utils.net.discrete import Actor
+from tianshou_pde.data import Collector, VectorReplayBuffer
+from tianshou_pde.policy import DiscreteBCQPolicy
+from tianshou_pde.trainer import offline_trainer
+from tianshou_pde.utils import TensorboardLogger, WandbLogger
+from tianshou_pde.utils.net.common import ActorCritic
+from tianshou_pde.utils.net.discrete import Actor
 
 
 def get_args():

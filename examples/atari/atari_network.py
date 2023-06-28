@@ -4,7 +4,7 @@ import numpy as np
 import torch
 from torch import nn
 
-from tianshou.utils.net.discrete import NoisyLinear
+from tianshou_pde.utils.net.discrete import NoisyLinear
 
 
 def layer_init(

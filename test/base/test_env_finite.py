@@ -7,9 +7,9 @@ import gymnasium as gym
 import numpy as np
 from torch.utils.data import DataLoader, Dataset, DistributedSampler
 
-from tianshou.data import Batch, Collector
-from tianshou.env import BaseVectorEnv, DummyVectorEnv, SubprocVectorEnv
-from tianshou.policy import BasePolicy
+from tianshou_pde.data import Batch, Collector
+from tianshou_pde.env import BaseVectorEnv, DummyVectorEnv, SubprocVectorEnv
+from tianshou_pde.policy import BasePolicy
 
 
 class DummyDataset(Dataset):

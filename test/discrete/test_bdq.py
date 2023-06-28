@@ -5,11 +5,11 @@ import gymnasium as gym
 import numpy as np
 import torch
 
-from tianshou.data import Collector, VectorReplayBuffer
-from tianshou.env import ContinuousToDiscrete, DummyVectorEnv
-from tianshou.policy import BranchingDQNPolicy
-from tianshou.trainer import offpolicy_trainer
-from tianshou.utils.net.common import BranchingNet
+from tianshou_pde.data import Collector, VectorReplayBuffer
+from tianshou_pde.env import ContinuousToDiscrete, DummyVectorEnv
+from tianshou_pde.policy import BranchingDQNPolicy
+from tianshou_pde.trainer import offpolicy_trainer
+from tianshou_pde.utils.net.common import BranchingNet
 
 
 def get_args():

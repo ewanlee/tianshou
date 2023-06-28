@@ -8,12 +8,12 @@ import pytest
 import torch
 from torch.utils.tensorboard import SummaryWriter
 
-from tianshou.data import Collector, VectorReplayBuffer
-from tianshou.policy import A2CPolicy, ImitationPolicy
-from tianshou.trainer import offpolicy_trainer, onpolicy_trainer
-from tianshou.utils import TensorboardLogger
-from tianshou.utils.net.common import ActorCritic, Net
-from tianshou.utils.net.discrete import Actor, Critic
+from tianshou_pde.data import Collector, VectorReplayBuffer
+from tianshou_pde.policy import A2CPolicy, ImitationPolicy
+from tianshou_pde.trainer import offpolicy_trainer, onpolicy_trainer
+from tianshou_pde.utils import TensorboardLogger
+from tianshou_pde.utils.net.common import ActorCritic, Net
+from tianshou_pde.utils.net.discrete import Actor, Critic
 
 try:
     import envpool

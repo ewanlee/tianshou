@@ -8,7 +8,7 @@ import numpy as np
 import pytest
 import torch
 
-from tianshou.data import Batch, to_numpy, to_torch
+from tianshou_pde.data import Batch, to_numpy, to_torch
 
 
 def test_batch():
